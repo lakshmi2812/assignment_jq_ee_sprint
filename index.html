@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Form Validation</title>
+  <link rel = "stylesheet" href = "styles.css">
+</head>
+
+<body>
+  <div class = "container">
+  <form id = "form">
+    <section>
+    <label for = "name">Your Full Name:</label><br>
+    <input type = "text" id = "your_name" name = "name" placeholder = "Please enter your name">
+    <input type = "text" id = "name_count_down">
+  </section>
+    <section>
+    <label for = "password">Password:</label><br>
+    <input type = "password" id = "pwd" name = "passwd">
+    <input type = "text" id = "pwd_count_down">
+  </section>
+  <section>
+    <label for = "confirm_password">Confirm Password:</label><br>
+    <input type = "text" id = "confirm_pwd" name = "confirm_passwd">
+    <input type = "text" id = "confirm_count_down"><input type = "text" id = "pwd_confirm_msg" name = "pwd_confirm_msg">
+  </section>
+  <section>
+    <label for = "comment">Comments:</label><br>
+    <textarea  id = "comments" placeholder = "Please enter your comments here" style = "height:150px"></textarea>
+    <input type = "text" id = "comments_count_down">
+  </section>
+  <input type = "submit" id = "submit" name = "submit">
+  </form>
+</div>
+<script src="jquery-3.2.1.min.js"></script>
+<script src = "scripts.js"></script>
+</body>
+</html>
